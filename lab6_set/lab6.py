@@ -1,8 +1,6 @@
 import random
 
 # Ex1
-
-
 def sym_dif(A, B):
     """
     sym_dif([1,2,3],[3,4])
@@ -10,14 +8,12 @@ def sym_dif(A, B):
     """
     return set(A).symmetric_difference(B)
 
-
 a = [1, 2, 3]
 b = [3, 4]
 print(sym_dif(a, b))
 
+
 # Ex2
-
-
 def remove_dup(A):
     """
     remove_dup([1, 4, 5, 3, 6, 7, 5, 3, 1, 9, 3, 3, 4, 2])
@@ -32,9 +28,8 @@ def remove_dup(A):
 
 print(remove_dup([1, 4, 5, 3, 6, 7, 5, 3, 1, 9, 3, 3, 4, 2]))
 
+
 # Ex3
-
-
 def allowed(users, bad):
     """
     users = ['tom', 'pam', 'sasha', 'jj', 'que', 'jeff']
@@ -49,9 +44,8 @@ users = ['tom', 'pam', 'sasha', 'jj', 'que', 'jeff']
 bad = set(['jeff', 'sasha'])
 print(allowed(users, bad))
 
+
 # Ex4
-
-
 def prob(first, second, trials):
     """
     first = 2
@@ -74,9 +68,9 @@ def prob(first, second, trials):
 
 print(prob(2, 5, 10000))
 
+
+
 # Ex5
-
-
 def translate(week_day):
     """
     week_day - day of week, e.g. Monday, Tuesday
@@ -97,11 +91,10 @@ def translate(week_day):
             return days[i]
 
 
-print(translate("Mon"))
+print(translate("Tue"))
+
 
 # Ex6
-
-
 def times(A):
     """
     A - a list, e.g. ['dog', 'pencil', 'fence', 'dog', 'apple', 'dog', 'dog', 'dog', 'pear', 'pencil', 'pear', 'pear']
@@ -122,10 +115,14 @@ t = ['dog', 'pencil', 'fence', 'dog', 'apple', 'dog',
      'dog', 'dog', 'pear', 'pencil', 'pear', 'pear']
 print(times(t))
 
+
+
 # Ex7
-
-
 def most_frequent(M):
+    """
+    M - a dict {'dog': 5, 'pencil': 2, 'fence': 1}\n
+    return two most frequntly item in M
+    """
     temp1 = []
     temp2 = []
 

@@ -1,4 +1,6 @@
+#1
 def binary(n):
+    """convert n to base 2"""
     b2 = ""
 
     if n == 0:
@@ -8,11 +10,14 @@ def binary(n):
         b2 = str(n % 2) + b2
         n = int(n / 2)
 
-    return b2
+    return int(b2)
 
-print(binary(101))
+print(binary(169))
 
+
+#2
 def gcd(a, b):
+    """return greatest common divisor of a and b"""
     a = abs(a)
     b = abs(b)
     q = 0
@@ -25,6 +30,7 @@ def gcd(a, b):
     return a
 
 def lcm(a, b):
+    """return least common mutiplier of a and b"""
     return int((a * b) / gcd(a, b))
 
-print(lcm(-12, -18))
+print(lcm(12, 18))
