@@ -46,7 +46,7 @@ def factorize(n):
 
     return d
 
-print(factorize(1000000))
+print(factorize(243))
 
 
 #3
