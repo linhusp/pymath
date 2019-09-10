@@ -1,4 +1,6 @@
 import math
+
+
 def main():
     limit = 100
     s1 = sum(i for i in range(1, limit + 1))

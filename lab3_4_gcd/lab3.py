@@ -1,6 +1,10 @@
 import time
 
 
+def main():
+    print(list_primes(99999999)[-1])
+
+
 #1
 def list_primes(n):
     """return a list of prime numbers less than n"""
@@ -25,7 +29,7 @@ def list_primes(n):
 
     return valid
 
-print(list_primes(1000))
+# print(list_primes(1000))
 
 
 #2
@@ -46,7 +50,7 @@ def factorize(n):
 
     return d
 
-print(factorize(243))
+# print(factorize(243))
 
 
 #3
@@ -63,4 +67,10 @@ def gcd(a, b):
 
     return a
 
-print(gcd(2, 100))
+# print(gcd(2, 100))
+
+
+if __name__ == '__main__':
+    t = time.time()
+    main()
+    print('finished in %s secs' % str(time.time() - t))
