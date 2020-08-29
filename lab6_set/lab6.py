@@ -26,7 +26,7 @@ def remove_dup(A):
     return set(temp)
 
 
-print(remove_dup([1, 4, 5, 3, 6, 7, 5, 3, 1, 9, 3, 3, 4, 2]))
+# print(remove_dup([1, 4, 5, 3, 6, 7, 5, 3, 1, 9, 3, 3, 4, 2]))
 
 
 # Ex3
@@ -42,7 +42,7 @@ def allowed(users, bad):
 
 users = ['tom', 'pam', 'sasha', 'jj', 'que', 'jeff']
 bad = set(['jeff', 'sasha'])
-print(allowed(users, bad))
+# print(allowed(users, bad))
 
 
 # Ex4
@@ -66,7 +66,7 @@ def prob(first, second, trials):
     return float(count) / trials
 
 
-print(prob(2, 5, 10000))
+# print(prob(2, 5, 10000))
 
 
 
@@ -91,7 +91,7 @@ def translate(week_day):
             return days[i]
 
 
-print(translate("Tue"))
+# print(translate("Tue"))
 
 
 # Ex6
@@ -113,7 +113,7 @@ def times(A):
 
 t = ['dog', 'pencil', 'fence', 'dog', 'apple', 'dog',
      'dog', 'dog', 'pear', 'pencil', 'pear', 'pear']
-print(times(t))
+# print(times(t))
 
 
 
@@ -137,4 +137,4 @@ def most_frequent(M):
 
 
 ocurrs = {'dog': 5, 'pencil': 2, 'fence': 1}
-print(most_frequent(ocurrs))
+# print(most_frequent(ocurrs))

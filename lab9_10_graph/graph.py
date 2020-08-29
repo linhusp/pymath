@@ -80,9 +80,10 @@ for e in es:
 # print(g.min_spanning_tree())
 
 tg = Graph(4)
-tg.add_edge(0, 1, 10)
-tg.add_edge(0, 2, 6)
-tg.add_edge(0, 3, 5)
-tg.add_edge(1, 3, 15)
-tg.add_edge(2, 3, 4)
+# tg.add_edge(0, 1, 10)
+# tg.add_edge(0, 2, 6)
+# tg.add_edge(0, 3, 5)
+# tg.add_edge(1, 3, 15)
+# tg.add_edge(2, 3, 4)
+[tg.add_edge(edge[0], edge[1], edge[2]) for edge in es]
 tg.temp()

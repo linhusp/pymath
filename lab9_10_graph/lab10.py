@@ -83,6 +83,7 @@ class Graph:
                 result.append(self.graph[i])
         return result
 
+
 class DGraph:
     def __init__(self, vertices):
         self.vertices = vertices
@@ -90,6 +91,7 @@ class DGraph:
 
     def add_edge(self, u, v, weight):
         self.graph.append([u, v, weight])
+
     def find_root(self, roots, node):
         """find chosen node's root"""
         if roots[node] == node:
@@ -132,12 +134,12 @@ class DGraph:
             index += 1
             u_root = self.find_root(roots, u)
             v_root = self.find_root(roots, v)
-            
+
             if u_root != v_root:
                 edge += 1
-                result.append([u, v, weight]) 
+                result.append([u, v, weight])
                 self.fusion(roots, ranks, u_root, v_root)
-        
+
         return result
 
 
